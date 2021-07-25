@@ -7,7 +7,7 @@ int main( int argc, char *argv[] ) {
     int min_length = atoi(argv[2]);
     int max_length = atoi(argv[3]);
 
-    int result = bruteforce_randomly(password, min_length, max_length);
+    long result = bruteforce_randomly(password, min_length, max_length);
 
     printf("Cracked the password in %d guesses! \n", result);
 }
