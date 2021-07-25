@@ -1,0 +1,16 @@
+{
+    "name": "brutefarce",
+    "version": "1.0.0",
+    "description": "Bruteforce passwords in farcical way",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/stscoundrel/brutefarce.git"
+    },
+    "author": "",
+    "license": "MIT",  
+    "scripts": {
+      "build:c": "gcc -o brutefarce-c C/src/main.c",
+      "run:c": "yarn build:c && ./brutefarce-c"
+    }
+  }
+  
