@@ -12,11 +12,12 @@ int bruteforce_randomly(char password[], int min_length, int max_length) {
 
     while(is_not_cracked) {
         int length = rand()% max_length;
-        char *current_guess = malloc(sizeof(char) * (length +1));
 
         if( length < min_length ) {
             length = min_length;
         }
+
+        char *current_guess = malloc(sizeof(char) * (length +1));
 
         int i;
         for(i = 0; i < length; i++){
