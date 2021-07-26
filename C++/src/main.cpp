@@ -1,14 +1,17 @@
 #include <iostream>
+#include "bruteforcer.cpp"
 using namespace std;
-  
+
 int main(int argc, char** argv) {
     string password = argv[1];
     unsigned short int min_length = atoi(argv[2]); 
     unsigned short int max_length = atoi(argv[3]);
     
-    printf("%s \n", password.c_str()); 
-    printf("%d \n", min_length); 
-    printf("%d \n", max_length); 
+    Bruteforcer farce(password, min_length, max_length);
+
+    long result = farce.break_password();
+
+    printf("Cracked the password in %ld guesses! \n", result);
 
     return 0;
 }
