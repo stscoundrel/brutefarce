@@ -12,7 +12,8 @@
       "build:c": "gcc -o brutefarce-c C/src/main.c",
       "run:c": "yarn build:c && ./brutefarce-c",
       "build:c++": "g++ -o brutefarce-cpp C++/src/main.cpp",
-      "run:c++": "yarn build:c++ && ./brutefarce-cpp"
+      "run:c++": "yarn build:c++ && ./brutefarce-cpp",
+      "run:rust": "cd Rust && cargo run"
     }
   }
   
