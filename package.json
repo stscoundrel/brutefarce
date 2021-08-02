@@ -13,7 +13,9 @@
       "run:c": "yarn build:c && ./brutefarce-c",
       "build:c++": "g++ -o brutefarce-cpp C++/src/main.cpp",
       "run:c++": "yarn build:c++ && ./brutefarce-cpp",
-      "run:rust": "cd Rust && cargo run"
+      "run:rust": "cd Rust && cargo run",
+      "build:typescript": "cd TypeScript && yarn",
+      "run:typescript": "yarn build:typescript && cd TypeScript && yarn start"
     }
   }
   
