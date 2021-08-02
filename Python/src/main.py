@@ -4,8 +4,8 @@ from bruteforce import bruteforce_password
 
 def main():
     password = sys.argv[1]
-    min_length = sys.argv[2]
-    max_length = sys.argv[3]
+    min_length = int(sys.argv[2])
+    max_length = int(sys.argv[3])
 
     result = bruteforce_password(password, min_length, max_length)
 
