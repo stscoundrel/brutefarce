@@ -6,7 +6,8 @@ namespace Brutefarce
     {
         static void Main(string[] args)
         {
-            if (args.Length < 3) { 
+            if (args.Length < 3)
+            {
                 Console.WriteLine("Too few arguments provided. Provide password, min length and max length");
                 Environment.Exit(0);
             }
