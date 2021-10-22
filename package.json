@@ -16,7 +16,8 @@
       "run:rust": "cd Rust && cargo run",
       "build:typescript": "cd TypeScript && yarn",
       "run:typescript": "yarn build:typescript && cd TypeScript && yarn start",
-      "run:python": "python3 Python/src/main.py"
+      "run:python": "python3 Python/src/main.py",
+      "run:c#": "dotnet run --project C#/src"
     }
   }
   
