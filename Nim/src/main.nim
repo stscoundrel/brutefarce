@@ -1,6 +1,6 @@
-import os
-import system
-import strutils
+import os, system, strutils
+
+include bruteforce
 
 if paramCount() < 3:
     echo "Too few arguments provided. Provide password, min length and max length"
@@ -11,7 +11,7 @@ let
   maxLength: int = parseInt(paramStr(2))
   password: string = paramStr(3)
 
+let totalGuesses: int =  bruteforce(minLength, maxLength, password)
 
-echo minLength
-echo maxLength
-echo password
+echo "Cracked the password in ", totalGuesses, " guesses!"
+quit(QuitSuccess)
