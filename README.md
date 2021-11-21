@@ -36,3 +36,4 @@ Currently C, C++, C#, Rust, TypeScript, Python and Nim implementations are avail
 - `yarn run:typescript hunter2 6 12`
 - `yarn run:python hunter2 6 12`
 - `yarn run:c# hunter2 6 12`
+- `yarn run:nim hunter2 6 12`
