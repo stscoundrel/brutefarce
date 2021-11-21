@@ -17,7 +17,8 @@
       "build:typescript": "cd TypeScript && yarn",
       "run:typescript": "yarn build:typescript && cd TypeScript && yarn start",
       "run:python": "python3 Python/src/main.py",
-      "run:c#": "dotnet run --project C#/src"
+      "run:c#": "dotnet run --project C#/src",
+      "run:nim": "nim c -r Nim/src/main.nim"
     }
   }
   
