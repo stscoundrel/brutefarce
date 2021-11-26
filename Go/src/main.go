@@ -1,6 +1,7 @@
 package main
 
 import (
+	"brutefarce/bruteforce"
 	"fmt"
 	"os"
 	"strconv"
@@ -23,7 +24,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println(minLength)
-	fmt.Println(maxLength)
-	fmt.Println(password)
+	totalGuesses := bruteforce.BreakPassword(minLength, maxLength, password)
+
+	fmt.Println(fmt.Sprintf("Cracked the password in %d guesses!", totalGuesses))
 }

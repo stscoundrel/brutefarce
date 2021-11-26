@@ -19,8 +19,8 @@
       "run:python": "python3 Python/src/main.py",
       "run:c#": "dotnet run --project C#/src",
       "run:nim": "nim c -r Nim/src/main.nim",
-      "build:go": "go build -o brutefarce-go Go/src/main.go",
-      "run:go": "yarn build:go && ./brutefarce-go"
+      "build:go": "cd Go/src && go build -o brutefarce-go main.go",
+      "run:go": "yarn build:go && ./Go/src/brutefarce-go"
     }
   }
   

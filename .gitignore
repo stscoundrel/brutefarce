@@ -5,3 +5,5 @@
 .ionide
 /.vscode
 /brutefarce-go
+/Go/src/brutefarce-go
+.DS_Store
