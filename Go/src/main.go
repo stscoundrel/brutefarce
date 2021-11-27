@@ -15,9 +15,9 @@ func main() {
 		os.Exit(1)
 	}
 
-	minLength, minErr := strconv.Atoi(args[0])
-	maxLength, maxErr := strconv.Atoi(args[1])
-	password := args[2]
+	password := args[0]
+	minLength, minErr := strconv.Atoi(args[1])
+	maxLength, maxErr := strconv.Atoi(args[2])
 
 	if minErr != nil || maxErr != nil {
 		fmt.Println("Could not parse min & max length. Check you're using numbers")
