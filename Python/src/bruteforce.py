@@ -1,12 +1,12 @@
 from random import randrange
 
-def get_random_character():
+def get_random_character() -> str:
     alphanumerical = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
     random_position = randrange(len(alphanumerical))
 
     return alphanumerical[random_position]
 
-def bruteforce_password(password, min_length, max_length):
+def bruteforce_password(password: str, min_length: int, max_length: int) -> int:
     is_not_cracked = True
     guesses = 1
 
