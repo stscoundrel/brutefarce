@@ -20,15 +20,15 @@ func getNewGuess(guessLength int) string {
 	return string(guess)
 }
 
-func BreakPassword(minLength int, maxLength int, password string) int {
+func BreakPassword(minLength int, maxLength int, password string) (guesses int) {
 	rand.Seed(time.Now().UnixNano())
 	isNotCracked := true
-	guesses := 1
+	guesses = 1
 
 	for isNotCracked {
 		guessLength := getGuessLength(minLength, maxLength)
 		guess := getNewGuess(guessLength)
-		fmt.Println(guesses, ". guess is ", guess)
+		fmt.Println(guesses, ". Guess is ", guess)
 
 		if guess == password {
 			fmt.Println("Found a match! ", guess)
@@ -38,5 +38,5 @@ func BreakPassword(minLength int, maxLength int, password string) int {
 		guesses += 1
 	}
 
-	return guesses
+	return
 }
