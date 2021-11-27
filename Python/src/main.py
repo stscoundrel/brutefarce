@@ -11,4 +11,5 @@ def main():
 
     print("Cracked the password in", result, "guesses")
 
-main()
+if __name__ == "__main__":
+    main()
