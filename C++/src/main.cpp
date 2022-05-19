@@ -1,6 +1,7 @@
 #include <iostream>
 #include "bruteforcer.cpp"
 using namespace std;
+using namespace Brutefarce;
 
 int main(int argc, char **argv)
 {
@@ -8,7 +9,7 @@ int main(int argc, char **argv)
     unsigned short int min_length = atoi(argv[2]);
     unsigned short int max_length = atoi(argv[3]);
 
-    Bruteforcer farce(password, min_length, max_length);
+    Brutefarce::Bruteforcer farce(password, min_length, max_length);
 
     long result = farce.break_password();
 

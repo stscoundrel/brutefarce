@@ -1,21 +1,19 @@
-#include <string>
-using namespace std;
+#include "bruteforcer.h"
 
-class Bruteforcer
+namespace Brutefarce
 {
-public:
-    Bruteforcer(string password_to_crack, int min, int max)
+    Bruteforcer::Bruteforcer(string password_to_crack, int min, int max)
     {
         password = password_to_crack;
         min_length = min;
         max_length = max;
         guesses = 1;
     }
-    string get_alphanumeric()
+    string Bruteforcer::get_alphanumeric()
     {
         return "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
     }
-    int guess_length()
+    int Bruteforcer::guess_length()
     {
         int guess_length = rand() % (max_length + 1);
 
@@ -26,14 +24,14 @@ public:
 
         return guess_length;
     }
-    char get_random_char()
+    char Bruteforcer::get_random_char()
     {
         string alphanumeric = get_alphanumeric();
         int random_number = rand() % (alphanumeric.length() - 1);
 
         return alphanumeric[random_number];
     }
-    long int break_password()
+    long Bruteforcer::break_password()
     {
         bool is_not_cracked = true;
 
@@ -61,10 +59,4 @@ public:
 
         return guesses;
     }
-
-private:
-    string password;
-    unsigned short int min_length;
-    unsigned short int max_length;
-    long int guesses;
-};
+}
