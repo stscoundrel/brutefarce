@@ -19,7 +19,7 @@ While you can, results would (probably) be different each time. Unlike other alg
 
 **There are version written in different programming languages. Is one more efficient than the other?**
 
-While some languages can be run much faster than others, the inefficiency of the algorithm makes up for the speed of the code. Fast language will make guests faster, which might give them an edge.
+While some languages can be run much faster than others, the inefficiency of the algorithm makes up for the speed of the code. Fast language will make guesses faster, which might give them an edge.
 
 **What is the ballpark figure for Brutefarces speed?**
 
