@@ -19,6 +19,8 @@
       "run:python": "python3 Python/src/main.py",
       "run:c#": "dotnet run --project C#/src",
       "run:nim": "nim c -r Nim/src/main.nim",
+      "build:java": "javac ./Java/src/brutefarce/Main.java",
+      "run:java": "yarn build:java && cd Java/src && java brutefarce.Main",
       "build:go": "cd Go/src && go build -o brutefarce-go main.go",
       "run:go": "yarn build:go && ./Go/src/brutefarce-go"
     }
