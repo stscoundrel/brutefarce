@@ -41,6 +41,9 @@ long bruteforce_randomly(char password[], int min_length, int max_length)
         }
 
         guesses++;
+
+        // https://www.youtube.com/watch?v=Fgb8l2Ve8vo
+        free(current_guess);
     }
 
     return guesses;
