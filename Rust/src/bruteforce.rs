@@ -2,8 +2,12 @@ use std::convert::TryFrom;
 use rand::{distributions::Alphanumeric, Rng};
 
 fn get_guess_length(min_length: u32, max_length: u32) -> usize {
+    if min_length == max_length {
+        return usize::try_from(min_length).unwrap();
+    }
+
     let guess: u32 = rand::thread_rng()
-        .gen_range(min_length..max_length);
+        .gen_range(min_length..max_length+1);
         
     usize::try_from(guess).unwrap()
 }
