@@ -29,7 +29,7 @@ Depends on password, and implementation you're using. For example, the C impleme
 
 Brutefarce accepts three arguments: the password to crack, minimum length, and maximum length of password. For example:
 
-Currently C, C++, C#, Rust, TypeScript, Python, Nim, Go and Java implementations are available:
+Currently C, C++, C#, Rust, TypeScript, Python, Nim, Go, Java and F# implementations are available:
 - `yarn run:c hunter2 6 12`
 - `yarn run:c++ hunter2 6 12`
 - `yarn run:rust hunter2 6 12`
@@ -39,3 +39,4 @@ Currently C, C++, C#, Rust, TypeScript, Python, Nim, Go and Java implementations
 - `yarn run:nim hunter2 6 12`
 - `yarn run:go hunter2 6 12`
 - `yarn run:java hunter2 6 12`
+- `yarn run:f# hunter2 6 12`
