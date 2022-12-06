@@ -7,3 +7,6 @@
 /brutefarce-go
 /Go/src/brutefarce-go
 .DS_Store
+/project
+/target
+/Scala/src/brutefarce/brutefarce

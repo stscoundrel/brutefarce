@@ -23,7 +23,9 @@
       "run:java": "yarn build:java && cd Java/src && java brutefarce.Main",
       "build:go": "cd Go/src && go build -o brutefarce-go main.go",
       "run:go": "yarn build:go && ./Go/src/brutefarce-go",
-      "run:f#": "dotnet run --project F#/src"
+      "run:f#": "dotnet run --project F#/src",
+      "build:scala": "scalac -d ./Scala/src/brutefarce ./Scala/src/brutefarce/*.scala",
+      "run:scala": "yarn build:scala && cd SCala/src/brutefarce && scala -cp . Main.scala"
     }
   }
   
