@@ -27,7 +27,8 @@
       "build:scala": "scalac -d ./Scala/src/brutefarce ./Scala/src/brutefarce/*.scala",
       "run:scala": "yarn build:scala && cd SCala/src/brutefarce && scala -cp . Main.scala",
       "build:kotlin": "kotlinc -include-runtime -d brutefarce-kotlin.jar ./Kotlin/src/*.kt",
-      "run:kotlin": "yarn build:kotlin && java -jar ./brutefarce-kotlin.jar"
+      "run:kotlin": "yarn build:kotlin && java -jar ./brutefarce-kotlin.jar",
+      "run:dart": "cd Dart/brutefarce && dart run bin/brutefarce.dart"
     }
   }
   
