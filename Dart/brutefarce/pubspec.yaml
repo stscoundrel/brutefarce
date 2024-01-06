@@ -1,0 +1,13 @@
+name: brutefarce
+description: Bruteforce passwords in farcical way. Dart version..
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.1.5
+
+dependencies:
+  args: ^2.0.0
+
+dev_dependencies:
+  lints: ^2.0.0
